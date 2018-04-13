@@ -29,12 +29,12 @@
 
         <div class="col-lg-12">
 
-          <div class="panel">
-            <div class="heading">
-              <h3 class="title"><strong>Current Train Schedule</strong></h3>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
             </div>
-            <div class="body">
-              <table class="table" id="trainTable">
+            <div class="panel-body">
+              <table class="table table-hover" id="trainTable">
                 <thead>
                   <tr>
                     <th>Train Name</th>
@@ -50,36 +50,42 @@
             </div>
           </div>
 
-          <div class="secondPanel">
-            <div class="secondHeading">
-              <h3 class="secondTitle"><strong>Add Train</strong></h3>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Add Train</strong></h3>
             </div>
-            <div class="secondBody">
+            <div class="panel-body">
 
               <form>
-                <div class="entries">
+                <div class="form-group">
                   <label for="trainName">Train Name</label>
-                  <input class="group" id="trainName" type="text">
+                  <input class="form-control" id="trainName" type="text">
                 </div>
-                <div class="entries">
+                <div class="form-group">
                   <label for="dest">Destination</label>
-                  <input class="group" id="dest" type="text">
+                  <input class="form-control" id="dest" type="text">
                 </div>
-                <div class="entries">
+                <div class="form-group">
                   <label for="first">First Train Time (HH:mm - military time)</label>
-                  <input class="group" id="first" type="text">
+                  <input class="form-control" id="first" type="text">
                 </div>
-                <div class="entries">
+                <div class="form-group">
                   <label for="f">Frequency</label>
-                  <input class="group" id="f" type="text">
+                  <input class="form-control" id="f" type="text">
                 </div>
-                <button class="btn" id="addTrainBtn" type="submit">Submit</button>
+                <button class="btn btn-primary" id="addTrainBtn" type="submit">Submit</button>
               </form>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
     <script src="train.js"></script>
 
   </body>
