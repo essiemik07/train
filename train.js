@@ -79,4 +79,7 @@ var config = {
     console.log("Next train: " + snapshot.val().arrive);
     console.log("Minutes away: " + snapshot.val().minLeft);
   });
-})
+      
+    $("#trainTable > tbody").append("<tr><td>" + train + "</td><td>" + trainDest + "</td><td>" + trainFirst + "</td><td>" + trainF + "</td></tr>");
+
+});
